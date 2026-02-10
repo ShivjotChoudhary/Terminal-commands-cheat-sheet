@@ -354,3 +354,87 @@ deactivate
 ```
 
 ---
+# Essential Terminal & File Commands
+
+A quick reference guide for creating, editing, and managing files from the command line.
+
+## 📂 File Creation & Editing
+
+### Create a New File
+*Creates an empty file named `main.py`.*
+```bash
+touch main.py
+```
+
+### Open File Editor
+*Opens the file in the simplistic terminal editor (Nano).*
+```bash
+nano main.py
+```
+
+### Nano Editor Shortcuts
+| Action | Shortcut | Description |
+| :--- | :--- | :--- |
+| **Save File** | `CTRL + O` | Press `Enter` to confirm filename. |
+| **Exit Editor** | `CTRL + X` | Exits Nano (prompts to save if modified). |
+
+---
+
+## 📄 Viewing & Listing Files
+
+### List Files
+*Shows all files and folders in the current directory.*
+```bash
+ls
+```
+
+### Read File Content
+*Prints the entire content of `main.py` to the terminal screen.*
+```bash
+cat main.py
+```
+
+---
+
+## 🚀 Running Python
+
+### Run Script
+*Executes the Python code inside the file.*
+```bash
+python main.py
+```
+
+### Check Python Path
+*Shows which Python executable is currently active.*
+
+**macOS / Linux:**
+```bash
+which python
+```
+
+**Windows:**
+```bash
+where python
+```
+
+---
+
+## ✍️ Quick Text Manipulation (Redirection)
+
+### Append Text (Safe)
+*Adds text to the **end** of the file. Does NOT delete existing content.*
+```bash
+echo 'print("Hello World")' >> main.py
+```
+
+### Overwrite File (Caution)
+*Replaces the **entire** file content with new text. Old content is lost.*
+```bash
+echo 'import numpy' > main.py
+```
+
+### Write with Newline (Best for Scripts)
+*Writes formatted text (safely adds a new line `\n`).*
+```bash
+printf 'if __name__ == "__main__":\n    print("Start")\n' >> main.py
+```
