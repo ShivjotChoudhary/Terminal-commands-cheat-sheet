@@ -246,3 +246,148 @@ ls
 
 Practice daily.  
 **Terminal confidence = developer confidence.**
+Python Virtual Environment (venv) – Commands + Real-Life Examples
+===============================================================
+
+1) Check Python installation
+
+macOS / Linux:
+python3 --version
+
+Windows:
+python --version
+
+Use: confirms Python is installed
+
+
+2) Create project folder
+
+mkdir python_project
+cd python_project
+
+Use: keeps project files organized
+
+
+3) Create virtual environment
+
+macOS / Linux:
+python3 -m venv venv
+
+Windows:
+python -m venv venv
+
+Use: creates isolated Python environment in venv/
+
+
+4) Activate virtual environment
+
+macOS / Linux:
+source venv/bin/activate
+
+Windows (CMD / PowerShell):
+venv\Scripts\activate
+
+Use: switches Python & pip to venv
+Indicator: (venv) appears in terminal
+
+
+5) Install package (example)
+
+pip install numpy
+
+Use: installs package only inside venv
+
+
+6) Check installed packages
+
+pip list
+
+Use: shows packages installed in active environment
+
+
+7) Save dependencies
+
+pip freeze > requirements.txt
+
+Use: saves exact package versions
+Example content:
+numpy==1.26.4
+
+
+8) Install dependencies from file
+
+pip install -r requirements.txt
+
+Use: recreates same environment on another system
+
+
+9) Start Python interpreter
+
+Inside venv:
+python
+
+macOS system (outside venv):
+python3
+
+Use: starts Python shell
+
+
+10) Check which Python is being used
+
+macOS / Linux:
+which python
+
+Windows:
+where python
+
+Use: confirms Python is from venv or system
+
+
+11) Deactivate virtual environment
+
+deactivate
+
+Use: switches back to system Python
+
+
+------------------------------------------------
+REAL-LIFE EXAMPLES
+------------------------------------------------
+
+Example 1: Two projects conflict
+Project A needs numpy 1.26
+Project B needs numpy 1.22
+
+Without venv → one project breaks
+With venv → both work separately
+
+
+Example 2: College project
+Teacher runs:
+pip install -r requirements.txt
+
+Project runs exactly the same
+
+
+Example 3: GitHub project
+You push:
+- Python files
+- requirements.txt
+
+Anyone can recreate environment easily
+
+
+Example 4: Learning & experiments
+If environment breaks:
+rm -rf venv
+
+Create again and start fresh
+
+
+Example 5: Job / internship workflow
+Companies expect:
+- virtual environment
+- requirements.txt
+- clean dependency management
+
+Using venv = professional Python workflow
