@@ -354,11 +354,9 @@ deactivate
 ```
 
 ---
-# Essential Terminal & File Commands
 
-A quick reference guide for creating, editing, and managing files from the command line.
 
-## 📂 File Creation & Editing
+## 12. 📂 File Creation & Editing
 
 ### Create a New File
 *Creates an empty file named `main.py`.*
@@ -380,7 +378,7 @@ nano main.py
 
 ---
 
-## 📄 Viewing & Listing Files
+## 13. 📄 Viewing & Listing Files
 
 ### List Files
 *Shows all files and folders in the current directory.*
@@ -396,7 +394,7 @@ cat main.py
 
 ---
 
-## 🚀 Running Python
+## 14. 🚀 Running Python
 
 ### Run Script
 *Executes the Python code inside the file.*
@@ -419,7 +417,7 @@ where python
 
 ---
 
-## ✍️ Quick Text Manipulation (Redirection)
+## 15. ✍️ Quick Text Manipulation (Redirection)
 
 ### Append Text (Safe)
 *Adds text to the **end** of the file. Does NOT delete existing content.*
