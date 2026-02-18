@@ -436,3 +436,58 @@ echo 'import numpy' > main.py
 ```bash
 printf 'if __name__ == "__main__":\n    print("Start")\n' >> main.py
 ```
+## 📊 Mean, Median, and Mode in Pandas
+
+### 1️⃣ Mean (Average)
+
+The mean is calculated by adding all values and dividing by the total number of values.
+
+Example:
+Age = 10, 20, 30  
+Mean = (10 + 20 + 30) / 3 = 20  
+
+```python
+import pandas as pd
+
+# Mean of a column
+df["Age"].mean()
+```
+
+---
+
+### 2️⃣ Median (Middle Value)
+
+The median is the middle value after sorting the data.
+
+Example:
+10, 20, 30 → Median = 20  
+10, 20, 30, 40 → Median = (20 + 30) / 2 = 25  
+
+```python
+# Median of a column
+df["Age"].median()
+```
+
+---
+
+### 3️⃣ Mode (Most Frequent Value)
+
+The mode is the most frequently occurring value.
+
+Example:
+10, 20, 20, 30 → Mode = 20  
+
+```python
+# Mode of a column
+df["Age"].mode()
+```
+
+---
+
+## 🔥 Summary
+
+| Measure | Meaning | When to Use |
+|----------|----------|-------------|
+| Mean | Average value | Normally distributed data |
+| Median | Middle value | Skewed data / Outliers present |
+| Mode | Most frequent value | Categorical or repeated values |
